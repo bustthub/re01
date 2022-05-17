@@ -1,0 +1,222 @@
+.logo {
+    width: 1000px;
+    height: 86.67px;
+    background-color: #ffffff;
+
+}
+
+.logo1 {
+    width: 120px;
+    height: 60.67px;
+    background-image: url(../img/ji55.png);
+    background-size: 120px;
+    float: left;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+.logo ul {
+    list-style: none;
+    float: left;
+    margin-left: 70px;
+    line-height: 86px;
+}
+
+.logo ul li {
+    display: inline;
+}
+
+.logo a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-left: 33px;
+    font-size: 20px;
+
+}
+
+.logo a:hover {
+    color: #af1f0c;
+}
+
+.food {
+    width: 1650px;
+    height: 700px;
+}
+
+.banner {
+    width: 1000px;
+    height: 700px;
+    margin-bottom: 20px;
+}
+
+.banner ul {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.banner ul li {
+    width: 195px;
+    cursor: pointer;
+}
+
+/* 小图 */
+.banner ul li img {
+    width: 100%;
+    height: 110px;
+    border: 5px solid transparent;
+}
+
+/* 大图 */
+.banner ul .big-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 550px;
+    background: url("../img/ji10.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid transparent;
+    transition: 0.5s;
+}
+
+/* 移动框 */
+.banner ul .frame {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    width: 195px;
+    height: 110px;
+    border: 5px solid rgb(242, 165, 101);
+    /* 改变bug */
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* 移动框上的三角形 */
+.banner ul .frame::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: rgb(247, 149, 87);
+    left: calc(50% - 15px);
+    top: -18px;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.banner ul li:nth-child(1):hover~.big-img {
+    background-image: url("../img/ji10.png");
+}
+
+.banner ul li:nth-child(2):hover~.big-img {
+    background-image: url("../img/banner94.png");
+}
+
+.banner ul li:nth-child(3):hover~.big-img {
+    background-image: url("../img/banner97.png");
+}
+
+.banner ul li:nth-child(4):hover~.big-img {
+    background-image: url("../img/banner96.png");
+}
+
+.banner ul li:nth-child(5):hover~.big-img {
+    background-image: url("../img/banner95.png");
+}
+
+.banner ul li:nth-child(1):hover~.frame {
+    left: 0;
+}
+
+.banner ul li:nth-child(2):hover~.frame {
+    left: 200px;
+}
+
+.banner ul li:nth-child(3):hover~.frame {
+    left: 400px;
+}
+
+.banner ul li:nth-child(4):hover~.frame {
+    left: 600px;
+}
+
+.banner ul li:nth-child(5):hover~.frame {
+    left: 800px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 1650px;
+    height: 2700px;
+
+}
+
+.content {
+    width: 1000px;
+    height: 2650px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.contentson1 {
+    float: left;
+    width: 72.5%;
+    height: 2650px;
+    position: relative;
+
+}
+
+.contentson2 {
+    float: right;
+    width: 24%;
+    height: 1000px;
+}
+
+#ol1 {
+    font-size: 16px;
+    font-weight: 200;
+    color: #cccccc;
+}
+
+#ol2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #adadad;
+    padding-bottom: 10px;
+}
+
+#ol2 a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #adadad;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.contetncenter {
+    width: 3.5%;
+    height: 1000px;
+    float: left;
+}
+
+.footer {
+    width: 1000px;
+    height: 120px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #696a6a;
+}

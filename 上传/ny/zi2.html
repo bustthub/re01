@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>啤酒鸭</title>
+ <link rel="icon" type="../img/x-icon" href="../img/ji55.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.logo {
+    width: 1000px;
+    height: 86.67px;
+    background-color: #ffffff;
+
+}
+
+.logo1 {
+    width: 120px;
+    height: 60.67px;
+    background-image: url(../img/ji55.png);
+    background-size: 120px;
+    float: left;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+.logo ul {
+    list-style: none;
+    float: left;
+    margin-left: 70px;
+    line-height: 86px;
+}
+
+.logo ul li {
+    display: inline;
+}
+
+.logo a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-left: 33px;
+    font-size: 20px;
+
+}
+
+.logo a:hover {
+    color: #af1f0c;
+}
+
+.food {
+    width: 1650px;
+    height: 700px;
+}
+
+.banner {
+    width: 1000px;
+    height: 700px;
+    margin-bottom: 20px;
+}
+
+.banner ul {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.banner ul li {
+    width: 195px;
+    cursor: pointer;
+}
+
+/* 小图 */
+.banner ul li img {
+    width: 100%;
+    height: 110px;
+    border: 5px solid transparent;
+}
+
+/* 大图 */
+.banner ul .big-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 550px;
+    background: url("../img/ji10.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 5px solid transparent;
+    transition: 0.5s;
+}
+
+/* 移动框 */
+.banner ul .frame {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    width: 195px;
+    height: 110px;
+    border: 5px solid rgb(242, 165, 101);
+    /* 改变bug */
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* 移动框上的三角形 */
+.banner ul .frame::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: rgb(247, 149, 87);
+    left: calc(50% - 15px);
+    top: -18px;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.banner ul li:nth-child(1):hover~.big-img {
+    background-image: url("../img/ji10.png");
+}
+
+.banner ul li:nth-child(2):hover~.big-img {
+    background-image: url("../img/banner94.png");
+}
+
+.banner ul li:nth-child(3):hover~.big-img {
+    background-image: url("../img/banner97.png");
+}
+
+.banner ul li:nth-child(4):hover~.big-img {
+    background-image: url("../img/banner96.png");
+}
+
+.banner ul li:nth-child(5):hover~.big-img {
+    background-image: url("../img/banner95.png");
+}
+
+.banner ul li:nth-child(1):hover~.frame {
+    left: 0;
+}
+
+.banner ul li:nth-child(2):hover~.frame {
+    left: 200px;
+}
+
+.banner ul li:nth-child(3):hover~.frame {
+    left: 400px;
+}
+
+.banner ul li:nth-child(4):hover~.frame {
+    left: 600px;
+}
+
+.banner ul li:nth-child(5):hover~.frame {
+    left: 800px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 1650px;
+    height: 2700px;
+
+}
+
+.content {
+    width: 1000px;
+    height: 2700px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.contentson1 {
+    float: left;
+    width: 72.5%;
+    height: 2700px;
+    position: relative;
+
+}
+
+.contentson2 {
+    float: right;
+    width: 24%;
+    height: 1000px;
+}
+
+#ol1 {
+    font-size: 16px;
+    font-weight: 200;
+    color: #cccccc;
+}
+
+#ol2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #adadad;
+    padding-bottom: 10px;
+}
+
+#ol2 a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #adadad;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.contetncenter {
+    width: 3.5%;
+    height: 1000px;
+    float: left;
+}
+
+.footer {
+    width: 1000px;
+    height: 120px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #696a6a;
+}
+
+</style>
+
+</head>
+
+<body>
+    <center>
+        <div class=logo>
+            <div class="logo1"></div>
+            <div>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="zi1.html">剁椒鱼头</a></li> 
+                    <li><a href="zi2.html">啤酒鸭</a></li>
+                    <li><a href="zi3.html">萝卜炖鸡</a></li>
+                    <li><a href="zi4.html">擂辣椒</a></li>
+                </ul>
+            </div>
+            <div class="search" style="float:right;margin-top: 33px;"><input type="text">&nbsp;<i class="fa fa-search fa-1x"
+                style="color: #ff6767;"></i></div>
+        </div>
+        <div class="food">
+            <div class="banner">
+                <ul>
+                    <li><img src="../img/ji10.png" alt=""></li>
+                    <li><img src="../img/banner94.png" alt=""></li>
+                    <li><img src="../img/banner97.png" alt=""></li>
+                    <li><img src="../img/banner96.png" alt=""></li>
+                    <li><img src="../img/banner95.png" alt=""></li>
+                    <li class="big-img"></li>
+                    <li class="frame">
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="content">
+            <div class="contentson1">
+                
+                <!-- 左侧 -->
+               
+                <table width="100%" height="340px">
+                    <tr>
+                        <td width="100%" height="20px" valign="top"><span
+                                style="font-size: 14px;color: #333;font-weight: 300;">您的位置:>湘味>啤酒鸭</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" height="50px"><span
+                                style="font-size: 30px; font-weight: 600;">啤酒鸭</span></td>
+                    </tr>
+                    <td width="100%"><img src="../img/banner92.png" alt="" width="90%" height="100%"
+                         ></td>
+                    </tr>
+                </table>
+                <div style="float: left;margin-top: 20px; width: 20%;"><i class="fa fa-eercast fa-2x"
+                        style="color: #ff6767;"></i><span style="font-size: 24px; color: #ff6767;">&nbsp;食材明细</span>
+                </div>
+                <div
+                    style="float: left; width: 90%;height: 94px;margin-top: 20px;border: 1px solid #adadad;border-radius: 15px;">
+                    <!-- 第一个明细列表 -->
+                    <table width="100%" height="94px" style="float: left;">
+                        <tr>
+                            <td align=center>鸭<p style="font-size: 14px;color: rgb(144, 144, 144);">一只</p>
+                            </td>
+                            <td align=center>啤酒<p style="font-size: 14px;color: rgb(144, 144, 144);">600ml</p>
+                            </td>
+                            <td align=center></td>
+                            <td align=center></td>
+                            <td align=center></td>
+                        </tr>
+                    </table>
+                    <p
+                        style="font-size: 18px;width: 60px;height: 30px;background-color: #ffffff;position: absolute;top: 655px;left: 50px;">
+                        主料</p>
+                </div>
+
+                <div
+                    style="float: left; width: 90%;height: 94px;margin-top: 40px;border: 1px solid #adadad;border-radius: 15px;">
+                    <!-- 第二个明细列表 -->
+                    <table width="100%" height="94px" style="float: left;">
+                        <tr>
+                            <td align=center width="20%">青辣椒<p style="font-size: 14px;color: rgb(144, 144, 144);">300克</p>
+                            </td>
+                            <td align=center width="20%">葱<p style="font-size: 14px;color: rgb(144, 144, 144);">15克</p>
+                            </td>
+                            <td align=center width="20%">姜片<p style="font-size: 14px;color: rgb(144, 144, 144);">20g</p>
+                            </td>
+                            <td align=center width="20%">蒜<p style="font-size: 14px;color: rgb(144, 144, 144);">一根
+                                </p>
+                            </td>
+                            <td align=center width="20%">烹调油<p style="font-size: 14px;color: rgb(144, 144, 144);">适量
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p
+                        style="font-size: 18px;width: 60px;height: 30px;background-color: #ffffff;position: absolute;top: 790px;left: 50px;">
+                        辅料</p>
+                </div>
+                <div
+                    style="float: left; width: 90%;height: 94px;margin-top: 40px;border: 1px solid #adadad;border-radius: 15px;">
+                    <!-- 第三个明细列表 -->
+                    <table width="100%" height="94px" style="float: left;">
+                        <tr>
+                            <td align=center width="20%">口味<p style="font-size: 14px;color: rgb(144, 144, 144);">微辣</p>
+                            </td>
+                            <td align=center width="20%">工艺<p style="font-size: 14px;color: rgb(144, 144, 144);">炖</p>
+                            </td>
+                            <td align=center width="20%">耗时<p style="font-size: 14px;color: rgb(144, 144, 144);">一小时</p>
+                            </td>
+                            <td align=center width="20%">难度<p style="font-size: 14px;color: rgb(144, 144, 144);">简单
+                                </p>
+                            </td>
+                            <td align=center width="20%">口感<p style="font-size: 14px;color: rgb(144, 144, 144);">细腻
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="float: left;margin-top: 40px; width: 33%; margin-bottom: 20px;"><i class="fa fa-eercast fa-2x"
+                        style="color: #ff6767;"></i><span style="font-size: 24px; color: #ff6767;">&nbsp;啤酒鸭的做法</span>
+                </div>
+                <br>
+                <div style="position: relative;"><table width="100%" height="1400px"><!-- 食物介绍部分 -->
+                    <tr>
+                        <td width="35%"><img src="../img/ya1.png" alt="" width="100%"></td>
+                        <td width="65%" valign="top" style="padding: 20px;"><p style="border: 1px solid rgb(164, 164, 164) ; width:30px;height:30px;border-radius: 50%;font-size: 20px;text-align: center;">1 </p><br>鸭子一只处理好切块焯水滤水。</td>
+                        
+                    </tr>
+                    <tr>
+                        <td width="35%"><img src="../img/ya2.png" alt="" width="100%"></td>
+                        <td width="65%" valign="top" style="padding: 20px;"><p style="border: 1px solid rgb(164, 164, 164) ; width:30px;height:30px;border-radius: 50%;font-size: 20px;text-align: center;">2</p><br>热锅下油，放几粒花椒爆香，捞出花椒弃之。</td>
+                        
+                    </tr>
+                    <tr>
+                        <td width="35%"><img src="../img/ya3.png" alt="" width="100%"></td>
+                        <td width="65%" valign="top" style="padding: 20px;"><p style="border: 1px solid rgb(164, 164, 164) ; width:30px;height:30px;border-radius: 50%;font-size: 20px;text-align: center;">3</p><br><br>下面爆香姜蒜。</td>
+                    </tr>
+                    <tr>
+                        <td width="35%"><img src="../img/ya4.png" alt="" width="100%"></td>
+                        <td width="65%" valign="top" style="padding: 20px;"><p style="border: 1px solid rgb(164, 164, 164) ; width:30px;height:30px;border-radius: 50%;font-size: 20px;text-align: center;">4</p><br><br>放入鸭块翻炒。</td>
+                    </tr>
+                    <tr>
+                        <td width="35%"><img src="../img/ya5.png" alt="" width="100%"></td>
+                        <td width="65%" valign="top" style="padding: 20px;"><p style="border: 1px solid rgb(164, 164, 164) ; width:30px;height:30px;border-radius: 50%;font-size: 20px;text-align: center;">5</p><br><br>依次放入老抽，生抽，糖，干辣椒，八角，桂皮，最后倒入一瓶（600ml）啤酒和少量清水（也可全用啤酒，750克左右）。</td>
+                    </tr>
+                    <tr>
+                        <td width="35%"><img src="../img/ya6.png" alt="" width="100%"></td>
+                        <td width="65%" valign="top" style="padding: 20px;"><p style="border: 1px solid rgb(164, 164, 164) ; width:30px;height:30px;border-radius: 50%;font-size: 20px;text-align: center;">6</p><br>大火烧开后转小火焖煮2.5小时，中途放盐，烧至汤汁收干时起锅。</td>
+                    </tr>
+                    <tr>
+                        <td width="35%"><img src="../img/banner92.png" alt="" width="100%"></td>
+                        <td width="65%" valign="top" style="padding: 20px;"><p style="border: 1px solid rgb(164, 164, 164) ; width:30px;height:30px;border-radius: 50%;font-size: 20px;text-align: center;">7</p><br><br>以上就是给各位带来的关于啤酒鸭的制作流程怎么样的全部内容了。
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            <div class="contetncenter"></div>
+            <div class="contentson2">
+              
+                <!-- 右侧 -->
+                <br>
+             <p align="left" style="font-size:18px;padding-bottom: 10px;"><i class="fa fa-book" aria-hidden="true" style="color:pink ;"></i>&nbsp;菜品历史</p>
+                <table width="100%">
+                    <tr>
+                        <td width="100%" height="260px"
+                            style="background-color: rgb(255, 255, 255);box-shadow:0 2px 2px 2px rgba(0, 0, 0, 0.3);">                           
+                            <p style="font-size: 14px;padding: 20px;">&nbsp;&nbsp;&nbsp;啤酒鸭的来历清朝时期，康熙皇帝曾多次巡访江南。一天上午，他悄悄微服到临武县游玩起来。只见河泽里到处都是一些美丽异常的小鸭。脖子上都留有一道白色羽环。他好奇的向当地纯朴的村民问起源由来，当地人告诉他：“这是舜帝南巡至临武，被其山清水秀、纯朴民风所吸引，便将一片羽毛、四颗小石子点化成四只美丽异常、貌似天鹅的小鸭。正当兴致高时，偏偏天公不为天子作美，时近傍晚，天降大雨，势如倾盆。只好跑到一家以鸭肉闻名的客栈，伙计把一大锅煮好的鸭肉端了上来，康熙顿时雅兴大起，将鸭肉与当地醇香的米酒共食，酒醉之时，一不小心，把杯中的酒倒进沸腾鸭肉锅中，顿时奇香四溢。次日醒来感觉浑身有劲，热血腾腾。兴许之时，挥笔题词“盛友湘客栈”。回宫后，康熙皇帝对此菜记忆犹新，经多年实践，采用了从埃及进贡的啤酒和多种名贵中草药做原料。从那以后啤酒鸭又从皇宫又传到了民间，成为了一道美味佳肴特色啤酒鸭。</p><br>
+                    </tr>
+                </table>
+                <table width="100%" height="42%" style="overflow: auto;">
+                    <br>
+                    <tr>
+                        <td width="100%" height="30px"><i class="fa fa-paper-plane-o" aria-hidden="true" style="color:pink;"></i>&nbsp;相关目的地：<span
+                                style="color:#ff8a00; font-weight: 300;">&nbsp;湖南&nbsp;长沙</span></td>
+                    </tr>
+                    <tr>
+                        <td valign="top" height="100px"><img src="../img/cs91.png" width="100%"></td>
+                    </tr>
+                    <tr>
+                        <td width="100%" height="50px" valign="top">
+                            <p style="font-size: 20px;font-weight: 200;">期待您的到来</p>
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td width="100%" height="160px" align="center"
+                            style="background-color: rgb(255, 255, 255);border: 1px solid rgb(165, 165, 165);box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);">
+                            <br><img src="../img/right96.png" alt="" width="90%">
+                            <p style="font-size: 14px;"><i class="fa fa-calendar" aria-hidden="true"style="color:pink ;"></i>&nbsp;2022年5月7日&nbsp;记录生活</p><br>
+                    </tr>
+                    <tr>
+                        <td width="100%" heigth="300px"></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <table width="100%" height="55%">
+                    <tr>
+                        <td height="15px"><i class="fa fa-free-code-camp" aria-hidden="true" style="color:pink ;"></i> &nbsp;推荐美食：<span style="color:#ff8a00; font-weight: 300;font-size: 16px;">剁椒鱼头</span>
+                        </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" height="100px"><br><a href="zi1.html"><img src="../img/ment99.png" alt="" width="100%"></a></td>
+                    </tr>
+                    <tr>
+                        <td height="30px">
+                            <p style="font-size: 16px;font-weight: 600;"><br>本期作品及下期作品</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <br>
+                            <p id="ol2"><span id="ol1">01/</span>&nbsp;<a href="zi1.html">剁椒鱼头</a></p>
+                            <p id="ol2"><span id="ol1">02/</span>&nbsp;<a href="zi2.html">啤酒鸭</a></p>
+                            <p id="ol2"><span id="ol1">03/</span>&nbsp;<a href="zi3.html">胡萝卜炖鸡</a></p>
+                            <p id="ol2"><span id="ol1">04/</span>&nbsp;<a href="zi4.html">擂辣椒</a></p>
+                            <p id="ol2"><span id="ol1">05/</span>&nbsp;<a href="#">老干妈</a></p>
+                            <p id="ol2"><span id="ol1">06/</span>&nbsp;<a href="#">清蒸香干</a></p>
+                            <p id="ol2"><span id="ol1">07/</span>&nbsp;<a href="#">凉拌黄瓜</a></p>
+                            <p id="ol2"><span id="ol1">08/</span>&nbsp;<a href="#">洋葱肉末粉丝煲</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr width="60%" color="e8e8e8">
+        <br>
+        <div class="footer">
+            <div style="width:70%;float: left;height: 100%;">
+                <table width="100%" height="100%">
+                    <tr>
+                        <td valign="top">
+                            <p style="font-size: 12px;color: #af1f0c;font-weight: bold;">一湘情愿——舌尖上的美味</p><br>
+                            <p style="font-size: 12px;color: #696a6a;font-weight:500;">
+                                下期作品：&nbsp;/老干妈/&nbsp;&nbsp;/洋葱肉末粉丝煲/&nbsp;&nbsp;/清蒸香干/&nbsp;&nbsp;/凉拌黄瓜/</p><br>
+                            <span style="color: #696a6a;font-size: 12px; font-weight: bold;">网页作品介绍</span>：<span style="font-size: 12px;color: #696a6a;font-weight:500;">本次的网页制作是网页设计的结课作业，是个人作品，网站也是个人网站，所有素材非商用。</span>
+                            <br>
+                            <br>
+                            <p style="font-size: 12px;color: #696a6a;">
+                                作者：###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                CopyRight@copy2022&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                时间：2022-05-07&nbsp;</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="width:25%;float: right;height: 100%; "><img src="../img/ji55.png" alt="" width="110%"
+                    style="margin-top: 10px;"></div>
+        </div>
+    </center>
+</body>
+
+</html>
